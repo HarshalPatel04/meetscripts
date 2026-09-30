@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function About() {
     return (
         <main>
@@ -9,6 +7,7 @@ export default function About() {
       ===================================================== */}
 
             <section className="about-page-hero">
+
                 <div className="site-container">
 
                     <div className="section-topline">
@@ -23,20 +22,21 @@ export default function About() {
                         </p>
 
                         <h1>
-                            We build
+                            We build things
                             <br />
-                            <span>things that matter.</span>
+                            <span>businesses need.</span>
                         </h1>
 
                         <p className="about-page-intro">
-                            Meetscripts Technologies is a digital company helping
-                            businesses build a stronger presence through technology,
-                            creative design and digital marketing.
+                            Meetscripts Technologies brings websites, design,
+                            content, advertising and digital growth together
+                            under one roof.
                         </p>
 
                     </div>
 
                 </div>
+
             </section>
 
 
@@ -45,6 +45,7 @@ export default function About() {
       ===================================================== */}
 
             <section className="about-intro">
+
                 <div className="site-container">
 
                     <div className="section-topline">
@@ -55,25 +56,34 @@ export default function About() {
                     <div className="about-intro-grid">
 
                         <div className="about-intro-statement">
+
                             <h2>
-                                Technology is only
+                                Not just another
                                 <br />
-                                <span>half the story.</span>
+                                <span>digital agency.</span>
                             </h2>
+
                         </div>
 
                         <div className="about-intro-copy">
 
                             <p>
-                                A good website is more than code. A good design is more
-                                than visuals. And marketing is more than putting an ad
-                                in front of someone.
+                                A business does not need more random digital
+                                activities. It needs the right things working
+                                together.
                             </p>
 
                             <p>
-                                We bring these pieces together to create digital
-                                experiences that look good, communicate clearly and
-                                help businesses move forward.
+                                That is why we combine technology, creative
+                                thinking and marketing to create digital systems
+                                that are useful, clear and built around business
+                                goals.
+                            </p>
+
+                            <p>
+                                From your first website to ongoing campaigns,
+                                we help turn ideas into something people can
+                                actually see, understand and act on.
                             </p>
 
                         </div>
@@ -81,11 +91,13 @@ export default function About() {
                     </div>
 
                 </div>
+
             </section>
 
+
             {/* =====================================================
-    WHAT WE DO
-===================================================== */}
+          WHAT WE DO
+      ===================================================== */}
 
             <section className="about-services">
 
@@ -98,88 +110,164 @@ export default function About() {
 
                     <div className="about-services-list">
 
-                        {/* WEBSITE */}
+                        {/* SERVICE 01 — WEBSITE / APPLICATION */}
 
-                        <Link
-                            href="/services/websites"
-                            className="about-service-row"
-                        >
+                        <div className="about-service-row">
+
                             <span>01</span>
 
                             <div>
-                                <h3>Build</h3>
+                                <h3>Website / Application</h3>
 
                                 <p>
-                                    Websites and digital experiences designed around
-                                    the way your business actually works.
+                                    Modern websites and applications designed around
+                                    your brand, audience, customers and business goals.
                                 </p>
                             </div>
 
-                            <span className="about-service-arrow">↗</span>
-                        </Link>
+                            <span className="about-service-arrow">
+                                ↗
+                            </span>
+
+                        </div>
 
 
-                        {/* DESIGN */}
+                        {/* SERVICE 02 — CREATIVE DESIGN */}
 
-                        <Link
-                            href="/services/design"
-                            className="about-service-row"
-                        >
+                        <div className="about-service-row">
+
                             <span>02</span>
 
                             <div>
-                                <h3>Design</h3>
+                                <h3>Creative Design</h3>
 
                                 <p>
-                                    Visual identities, social creatives and content
-                                    that make your brand easier to recognize.
+                                    Social posts, reels, campaign creatives and visual
+                                    content that gives your brand a consistent and
+                                    recognizable presence.
                                 </p>
                             </div>
 
-                            <span className="about-service-arrow">↗</span>
-                        </Link>
+                            <span className="about-service-arrow">
+                                ↗
+                            </span>
+
+                        </div>
 
 
-                        {/* SOCIAL MEDIA */}
+                        {/* SERVICE 03 — PRODUCT DESIGN */}
 
-                        <Link
-                            href="/services/social-media"
-                            className="about-service-row"
-                        >
+                        <div className="about-service-row">
+
                             <span>03</span>
 
                             <div>
-                                <h3>Manage</h3>
+                                <h3>Product Design</h3>
 
                                 <p>
-                                    Social profiles and digital content kept active,
-                                    consistent and relevant.
+                                    Product packaging, box design, labels and product
+                                    visuals created to make your products look
+                                    professional and stand out.
                                 </p>
                             </div>
 
-                            <span className="about-service-arrow">↗</span>
-                        </Link>
+                            <span className="about-service-arrow">
+                                ↗
+                            </span>
+
+                        </div>
 
 
-                        {/* BUSINESS GROWTH */}
+                        {/* SERVICE 04 — SOCIAL MEDIA */}
 
-                        <Link
-                            href="/services/business-growth"
-                            className="about-service-row"
-                        >
+                        <div className="about-service-row">
+
                             <span>04</span>
 
                             <div>
-                                <h3>Grow</h3>
+                                <h3>Social Media</h3>
 
                                 <p>
-                                    Meta advertising and digital growth systems built
-                                    around measurable business goals.
+                                    Content planning, publishing and profile management
+                                    across Instagram, Facebook and other digital
+                                    platforms.
                                 </p>
                             </div>
 
-                            <span className="about-service-arrow">↗</span>
-                        </Link>
+                            <span className="about-service-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        {/* SERVICE 05 — META ADVERTISING */}
+
+                        <div className="about-service-row">
+
+                            <span>05</span>
+
+                            <div>
+                                <h3>Meta Advertising</h3>
+
+                                <p>
+                                    Paid campaigns built around the right audience,
+                                    creative testing, lead generation and measurable
+                                    business objectives.
+                                </p>
+                            </div>
+
+                            <span className="about-service-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        {/* SERVICE 06 — VIDEO */}
+
+                        <div className="about-service-row">
+
+                            <span>06</span>
+
+                            <div>
+                                <h3>Video</h3>
+
+                                <p>
+                                    Video editing, VFX, animation and motion graphics
+                                    for brands, products, social media and digital
+                                    campaigns.
+                                </p>
+                            </div>
+
+                            <span className="about-service-arrow">
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        {/* SERVICE 07 — BUSINESS GROWTH */}
+
+                        <div className="about-service-row">
+
+                            <span>07</span>
+
+                            <div>
+                                <h3>Business Growth</h3>
+
+                                <p>
+                                    Digital strategies, lead generation and ongoing
+                                    support that connect your digital presence with
+                                    real business opportunities.
+                                </p>
+                            </div>
+
+                            <span className="about-service-arrow">
+                                ↗
+                            </span>
+
+                        </div>
 
                     </div>
 
@@ -204,6 +292,7 @@ export default function About() {
                     <div className="about-principles-grid">
 
                         <div className="about-principle-card">
+
                             <span>01</span>
 
                             <h3>
@@ -213,13 +302,16 @@ export default function About() {
                             </h3>
 
                             <p>
-                                Clear ideas, clean interfaces and communication
-                                that does not make people work to understand you.
+                                Good digital work should be easy to understand.
+                                We remove unnecessary complexity and focus on
+                                what actually matters.
                             </p>
+
                         </div>
 
 
                         <div className="about-principle-card">
+
                             <span>02</span>
 
                             <h3>
@@ -229,13 +321,16 @@ export default function About() {
                             </h3>
 
                             <p>
-                                Everything we create should have a reason to exist
-                                and contribute to the bigger business goal.
+                                Design is not only about looking good. Everything
+                                we create should have a purpose and help the
+                                business move forward.
                             </p>
+
                         </div>
 
 
                         <div className="about-principle-card">
+
                             <span>03</span>
 
                             <h3>
@@ -245,9 +340,11 @@ export default function About() {
                             </h3>
 
                             <p>
-                                We think beyond launch and create digital systems
-                                that can evolve as the business grows.
+                                Businesses change. Your digital presence should
+                                be able to change with them, rather than becoming
+                                a limitation.
                             </p>
+
                         </div>
 
                     </div>
@@ -258,7 +355,7 @@ export default function About() {
 
 
             {/* =====================================================
-          THE DIFFERENCE
+          DIFFERENCE
       ===================================================== */}
 
             <section className="about-difference">
@@ -268,28 +365,40 @@ export default function About() {
                     <div className="about-difference-inner">
 
                         <div>
+
                             <p className="about-page-eyebrow">
-                                WHY MEETSCRIPTS
+                                THE DIFFERENCE
                             </p>
 
                             <h2>
                                 One team.
                                 <br />
-                                <span>Multiple disciplines.</span>
+                                Multiple
+                                <br />
+                                <span>disciplines.</span>
                             </h2>
+
                         </div>
+
 
                         <div className="about-difference-copy">
 
                             <p>
-                                Instead of treating your website, design, social
-                                media and advertising as separate pieces, we look
-                                at how they work together.
+                                Instead of separating your website, content,
+                                advertising and growth into disconnected pieces,
+                                we look at how they can work together.
                             </p>
 
                             <p>
-                                That means your brand can stay consistent from the
-                                first impression to the first conversation.
+                                A website can support your ads. Your content can
+                                strengthen your brand. Your advertising can bring
+                                the right people to the website.
+                            </p>
+
+                            <p>
+                                The goal is to create a connected digital
+                                presence instead of a collection of unrelated
+                                services.
                             </p>
 
                         </div>
@@ -316,7 +425,7 @@ export default function About() {
                     <h2>
                         Let's build
                         <br />
-                        <span>what's next.</span>
+                        <span>something useful.</span>
                     </h2>
 
                     <a

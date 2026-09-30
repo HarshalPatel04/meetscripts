@@ -9,8 +9,6 @@ export default function Home() {
       <section className="hero">
         <div className="site-container hero-inner">
 
-          {/* LEFT — HERO COPY */}
-
           <div className="hero-copy">
 
             <p className="hero-eyebrow">
@@ -61,8 +59,6 @@ export default function Home() {
             </div>
 
 
-            {/* MAIN PROJECT */}
-
             <div className="work-main">
 
               <div className="browser-bar">
@@ -91,8 +87,6 @@ export default function Home() {
             </div>
 
 
-            {/* LEFT PROJECT */}
-
             <div className="work-small work-small-one">
 
               <img
@@ -103,8 +97,6 @@ export default function Home() {
             </div>
 
 
-            {/* TOP RIGHT PROJECT */}
-
             <div className="work-small work-small-two">
 
               <img
@@ -114,8 +106,6 @@ export default function Home() {
 
             </div>
 
-
-            {/* PROJECT INDEX */}
 
             <div className="work-index">
               <span>01</span>
@@ -137,8 +127,6 @@ export default function Home() {
         <div className="site-container">
 
 
-          {/* SECTION TOPLINE */}
-
           <div className="section-topline">
 
             <span>
@@ -151,8 +139,6 @@ export default function Home() {
 
           </div>
 
-
-          {/* SERVICES INTRO */}
 
           <div className="services-heading">
 
@@ -171,15 +157,15 @@ export default function Home() {
           </div>
 
 
-          {/* SERVICES LIST */}
-
           <div className="services-list">
 
 
-            {/* SERVICE 01 */}
+            {/* =================================================
+                SERVICE 01 — WEBSITE / APPLICATION
+            ================================================= */}
 
             <a
-              href="/services"
+              href="/services/websites"
               className="service-item"
             >
 
@@ -190,12 +176,12 @@ export default function Home() {
               <div className="service-name">
 
                 <h3>
-                  Websites
+                  Website / Application
                 </h3>
 
                 <p>
-                  Modern websites built around your brand
-                  and business goals.
+                  Modern websites and applications built around
+                  your brand, audience and business goals.
                 </p>
 
               </div>
@@ -207,10 +193,12 @@ export default function Home() {
             </a>
 
 
-            {/* SERVICE 02 */}
+            {/* =================================================
+                SERVICE 02 — CREATIVE DESIGN
+            ================================================= */}
 
             <a
-              href="/services"
+              href="/services/design"
               className="service-item"
             >
 
@@ -225,8 +213,8 @@ export default function Home() {
                 </h3>
 
                 <p>
-                  Social posts, reels and visual content
-                  designed to stand out.
+                  Social posts, reels and visual content designed
+                  to give your brand a consistent presence.
                 </p>
 
               </div>
@@ -238,10 +226,12 @@ export default function Home() {
             </a>
 
 
-            {/* SERVICE 03 */}
+            {/* =================================================
+                SERVICE 03 — PRODUCT DESIGN
+            ================================================= */}
 
             <a
-              href="/services"
+              href="/services/product-design"
               className="service-item"
             >
 
@@ -252,12 +242,12 @@ export default function Home() {
               <div className="service-name">
 
                 <h3>
-                  Social Media
+                  Product Design
                 </h3>
 
                 <p>
-                  Consistent content management across
-                  Instagram and Facebook.
+                  Product packaging, box, label and product visuals
+                  designed to make your products stand out.
                 </p>
 
               </div>
@@ -269,10 +259,12 @@ export default function Home() {
             </a>
 
 
-            {/* SERVICE 04 */}
+            {/* =================================================
+                SERVICE 04 — SOCIAL MEDIA
+            ================================================= */}
 
             <a
-              href="/services"
+              href="/services/social-media"
               className="service-item"
             >
 
@@ -283,12 +275,12 @@ export default function Home() {
               <div className="service-name">
 
                 <h3>
-                  Meta Ads
+                  Social Media
                 </h3>
 
                 <p>
-                  Campaigns focused on reaching the right
-                  audience and growing your business.
+                  Consistent content management across Instagram,
+                  Facebook and other digital platforms.
                 </p>
 
               </div>
@@ -299,35 +291,112 @@ export default function Home() {
 
             </a>
 
+
+            {/* =================================================
+                SERVICE 05 — META ADS
+            ================================================= */}
+
             <a
-              href="/services"
+              href="/services/meta-ads"
               className="service-item"
             >
+
               <div className="service-number">
                 05
               </div>
 
               <div className="service-name">
+
                 <h3>
-                  Business Growth
+                  Meta Ads
                 </h3>
 
                 <p>
-                  Digital strategies, lead generation and ongoing support
-                  to help your business grow.
+                  Campaigns focused on reaching the right audience
+                  and generating meaningful business opportunities.
                 </p>
+
               </div>
 
               <div className="service-arrow">
                 ↗
               </div>
+
             </a>
+
+
+            {/* =================================================
+                SERVICE 06 — VIDEO
+            ================================================= */}
+
+            <a
+              href="/services/video"
+              className="service-item"
+            >
+
+              <div className="service-number">
+                06
+              </div>
+
+              <div className="service-name">
+
+                <h3>
+                  Video
+                </h3>
+
+                <p>
+                  Video editing, VFX, animation and motion graphics
+                  for brands, products and digital campaigns.
+                </p>
+
+              </div>
+
+              <div className="service-arrow">
+                ↗
+              </div>
+
+            </a>
+
+
+            {/* =================================================
+                SERVICE 07 — BUSINESS GROWTH
+            ================================================= */}
+
+            <a
+              href="/services/business-growth"
+              className="service-item"
+            >
+
+              <div className="service-number">
+                07
+              </div>
+
+              <div className="service-name">
+
+                <h3>
+                  Business Growth
+                </h3>
+
+                <p>
+                  Digital strategies, lead generation and ongoing
+                  support to help your business grow.
+                </p>
+
+              </div>
+
+              <div className="service-arrow">
+                ↗
+              </div>
+
+            </a>
+
 
           </div>
 
         </div>
 
       </section>
+
 
       {/* =====================================================
           SELECTED WORK
@@ -337,9 +406,8 @@ export default function Home() {
 
         <div className="site-container">
 
-          {/* SECTION TOPLINE */}
-
           <div className="section-topline work-topline">
+
             <span>
               SELECTED WORK
             </span>
@@ -347,10 +415,9 @@ export default function Home() {
             <span>
               02 — PROJECTS
             </span>
+
           </div>
 
-
-          {/* INTRO */}
 
           <div className="work-heading">
 
@@ -370,8 +437,6 @@ export default function Home() {
 
           </div>
 
-
-          {/* PROJECTS */}
 
           <div className="projects-grid">
 
@@ -395,6 +460,7 @@ export default function Home() {
               <div className="project-info">
 
                 <div>
+
                   <span className="project-number">
                     01
                   </span>
@@ -402,6 +468,7 @@ export default function Home() {
                   <h3>
                     Digital Experience
                   </h3>
+
                 </div>
 
                 <span className="project-category">
@@ -436,6 +503,7 @@ export default function Home() {
               <div className="project-info">
 
                 <div>
+
                   <span className="project-number">
                     02
                   </span>
@@ -443,6 +511,7 @@ export default function Home() {
                   <h3>
                     Brand & Creative
                   </h3>
+
                 </div>
 
                 <span className="project-category">
@@ -477,6 +546,7 @@ export default function Home() {
               <div className="project-info">
 
                 <div>
+
                   <span className="project-number">
                     03
                   </span>
@@ -484,6 +554,7 @@ export default function Home() {
                   <h3>
                     Growth Campaign
                   </h3>
+
                 </div>
 
                 <span className="project-category">
@@ -497,6 +568,7 @@ export default function Home() {
               </div>
 
             </a>
+
 
           </div>
 
@@ -514,8 +586,15 @@ export default function Home() {
         <div className="site-container">
 
           <div className="section-topline">
-            <span>WHY MEETSCRIPTS</span>
-            <span>03 — ABOUT</span>
+
+            <span>
+              WHY MEETSCRIPTS
+            </span>
+
+            <span>
+              03 — ABOUT
+            </span>
+
           </div>
 
 
@@ -565,9 +644,12 @@ export default function Home() {
 
           <div className="about-points">
 
+
             <div className="about-point">
 
-              <span>01</span>
+              <span>
+                01
+              </span>
 
               <h3>
                 Think first.
@@ -583,7 +665,9 @@ export default function Home() {
 
             <div className="about-point">
 
-              <span>02</span>
+              <span>
+                02
+              </span>
 
               <h3>
                 Design clearly.
@@ -599,7 +683,9 @@ export default function Home() {
 
             <div className="about-point">
 
-              <span>03</span>
+              <span>
+                03
+              </span>
 
               <h3>
                 Build properly.
@@ -615,7 +701,9 @@ export default function Home() {
 
             <div className="about-point">
 
-              <span>04</span>
+              <span>
+                04
+              </span>
 
               <h3>
                 Grow together.
@@ -628,11 +716,13 @@ export default function Home() {
 
             </div>
 
+
           </div>
 
         </div>
 
       </section>
+
 
       {/* =====================================================
           PROCESS
@@ -643,8 +733,15 @@ export default function Home() {
         <div className="site-container">
 
           <div className="section-topline">
-            <span>HOW WE WORK</span>
-            <span>04 — PROCESS</span>
+
+            <span>
+              HOW WE WORK
+            </span>
+
+            <span>
+              04 — PROCESS
+            </span>
+
           </div>
 
 
@@ -665,6 +762,7 @@ export default function Home() {
 
 
           <div className="process-list">
+
 
             {/* STEP 01 */}
 
@@ -777,11 +875,13 @@ export default function Home() {
 
             </div>
 
+
           </div>
 
         </div>
 
       </section>
+
 
       {/* =====================================================
           FINAL CTA
@@ -792,8 +892,15 @@ export default function Home() {
         <div className="site-container">
 
           <div className="final-cta-topline">
-            <span>START A PROJECT</span>
-            <span>05 — CONTACT</span>
+
+            <span>
+              START A PROJECT
+            </span>
+
+            <span>
+              05 — CONTACT
+            </span>
+
           </div>
 
 
@@ -833,6 +940,14 @@ export default function Home() {
 
             <span>
               CREATIVE
+            </span>
+
+            <span>
+              PRODUCT DESIGN
+            </span>
+
+            <span>
+              VIDEO
             </span>
 
             <span>

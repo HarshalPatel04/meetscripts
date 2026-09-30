@@ -420,26 +420,36 @@ export default function Work() {
 
                         <div>
                             <span>02</span>
-                            <strong>Landing Pages</strong>
+                            <strong>Applications</strong>
                         </div>
 
                         <div>
                             <span>03</span>
-                            <strong>Brand & Creative</strong>
+                            <strong>Product Design</strong>
                         </div>
 
                         <div>
                             <span>04</span>
-                            <strong>Social Media</strong>
+                            <strong>Brand & Creative</strong>
                         </div>
 
                         <div>
                             <span>05</span>
-                            <strong>Meta Advertising</strong>
+                            <strong>Social Media</strong>
                         </div>
 
                         <div>
                             <span>06</span>
+                            <strong>Meta Advertising</strong>
+                        </div>
+
+                        <div>
+                            <span>07</span>
+                            <strong>Video Production</strong>
+                        </div>
+                        
+                        <div>
+                            <span>08</span>
                             <strong>Digital Growth</strong>
                         </div>
 

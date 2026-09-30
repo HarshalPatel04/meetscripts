@@ -1,92 +1,101 @@
-export default function Contact() {
+import Link from "next/link";
+
+export default function ContactPage() {
     return (
-        <main>
+        <main className="contact-v2">
 
             {/* =====================================================
           HERO
       ===================================================== */}
 
-            <section className="contact-page-hero">
-
+            <section className="contact-v2-hero">
                 <div className="site-container">
 
-                    <div className="section-topline">
-                        <span>MEETSCRIPTS TECHNOLOGIES</span>
-                        <span>05 — CONTACT</span>
+                    <div className="contact-v2-topline">
+                        <span>CONTACT</span>
+                        <span>01 — LET&apos;S TALK</span>
                     </div>
 
-                    <div className="contact-page-heading">
-
-                        <p className="contact-page-eyebrow">
-                            START A CONVERSATION
+                    <div className="contact-v2-hero-content">
+                        <p className="contact-v2-eyebrow">
+                            HAVE AN IDEA IN MIND?
                         </p>
 
                         <h1>
-                            Have an idea?
+                            Let&apos;s build
                             <br />
-                            <span>Let's talk.</span>
+                            something <span>great.</span>
                         </h1>
 
-                        <p className="contact-page-intro">
-                            Tell us what you are building, what you want to improve,
-                            or simply where you want to go next. We will take it
-                            from there.
+                        <p className="contact-v2-intro">
+                            Whether you need a website, a new brand identity,
+                            better content or a complete digital growth strategy,
+                            tell us what you&apos;re working on.
                         </p>
-
                     </div>
 
                 </div>
-
             </section>
 
 
             {/* =====================================================
-          CONTACT CONTENT
+          CONTACT AREA
       ===================================================== */}
 
-            <section className="contact-main">
-
+            <section className="contact-v2-main">
                 <div className="site-container">
 
-                    <div className="section-topline">
-                        <span>GET IN TOUCH</span>
-                        <span>01 — CONTACT</span>
-                    </div>
-
-                    <div className="contact-grid">
+                    <div className="contact-v2-main-grid">
 
                         {/* LEFT */}
+                        <div className="contact-v2-info">
 
-                        <div className="contact-info">
-
-                            <p className="contact-info-label">
-                                LET'S BUILD SOMETHING
-                            </p>
+                            <div className="contact-v2-section-label">
+                                <span>GET IN TOUCH</span>
+                                <span>02 — CONTACT</span>
+                            </div>
 
                             <h2>
-                                Your next
+                                Start with a
                                 <br />
-                                <span>project starts here.</span>
+                                conversation.
                             </h2>
 
-                            <p className="contact-info-text">
-                                Whether you need a website, creative design, social
-                                media management, advertising or a complete digital
-                                growth system, tell us what you have in mind.
+                            <p className="contact-v2-info-copy">
+                                You don&apos;t need to know exactly what service you need.
+                                Tell us what you&apos;re trying to achieve and we&apos;ll
+                                help figure out the right direction together.
                             </p>
 
+                            <div className="contact-v2-details">
 
-                            <div className="contact-details">
-
-                                <a href="mailto:hello@meetscripts.com">
+                                <a href="mailto:ms@meetscriptstech.com">
                                     <span>EMAIL</span>
-                                    hello@meetscripts.com
+                                    ms@meetscriptstech.com
                                 </a>
 
-                                <a href="tel:+910000000000">
+                                <a href="tel:+919854090395">
                                     <span>PHONE</span>
-                                    +91 00000 00000
+                                    +91 98540 90395
                                 </a>
+
+                                <div className="contact-v2-social">
+                                    <span>SOCIAL</span>
+
+                                    <div>
+                                        <a href="#" target="_blank" rel="noreferrer">
+                                            Instagram
+                                        </a>
+
+                                        <a href="#" target="_blank" rel="noreferrer">
+                                            Facebook
+                                        </a>
+
+                                        <a href="#" target="_blank" rel="noreferrer">
+                                            LinkedIn
+                                        </a>
+                                    </div>
+                                </div>
 
                             </div>
 
@@ -94,177 +103,194 @@ export default function Contact() {
 
 
                         {/* RIGHT — FORM */}
+                        <div className="contact-v2-form-wrap">
 
-                        <form className="contact-form">
-
-                            <div className="contact-form-row">
-
-                                <label>
-                                    YOUR NAME
-                                </label>
-
-                                <input
-                                    type="text"
-                                    name="name"
-                                    placeholder="Your name"
-                                />
-
+                            <div className="contact-v2-form-heading">
+                                <span>03 — YOUR PROJECT</span>
+                                <p>Tell us a little about what you&apos;re building.</p>
                             </div>
 
+                            <form className="contact-v2-form">
 
-                            <div className="contact-form-row">
+                                <div className="contact-v2-form-grid">
 
-                                <label>
-                                    EMAIL ADDRESS
-                                </label>
+                                    <div className="contact-v2-field">
+                                        <label htmlFor="name">YOUR NAME</label>
+                                        <input
+                                            id="name"
+                                            type="text"
+                                            placeholder="John Doe"
+                                        />
+                                    </div>
 
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="you@example.com"
-                                />
+                                    <div className="contact-v2-field">
+                                        <label htmlFor="email">EMAIL ADDRESS</label>
+                                        <input
+                                            id="email"
+                                            type="email"
+                                            placeholder="john@example.com"
+                                        />
+                                    </div>
 
-                            </div>
-
-
-                            <div className="contact-form-row">
-
-                                <label>
-                                    BUSINESS / COMPANY
-                                </label>
-
-                                <input
-                                    type="text"
-                                    name="company"
-                                    placeholder="Your company"
-                                />
-
-                            </div>
+                                </div>
 
 
-                            <div className="contact-form-row">
+                                <div className="contact-v2-field">
+                                    <label htmlFor="phone">PHONE NUMBER</label>
+                                    <input
+                                        id="phone"
+                                        type="tel"
+                                        placeholder="+91 00000 00000"
+                                    />
+                                </div>
 
-                                <label>
-                                    WHAT DO YOU NEED?
-                                </label>
 
-                                <select
-                                    name="service"
-                                    defaultValue=""
+                                <div className="contact-v2-field">
+                                    <label htmlFor="company">COMPANY / BRAND</label>
+                                    <input
+                                        id="company"
+                                        type="text"
+                                        placeholder="Your company"
+                                    />
+                                </div>
+
+
+                                <div className="contact-v2-field">
+                                    <label htmlFor="service">WHAT DO YOU NEED?</label>
+
+                                    <select id="service" defaultValue="">
+                                        <option value="" disabled>
+                                            Select a service
+                                        </option>
+                                        <option value="website">
+                                            Website / Application
+                                        </option>
+                                        <option value="creative-design">
+                                            Creative Design
+                                        </option>
+                                        <option value="product-design">
+                                            Product Design
+                                        </option>
+                                        <option value="social-media">
+                                            Social Media
+                                        </option>
+                                        <option value="meta-ads">
+                                            Meta Ads
+                                        </option>
+                                        <option value="video">
+                                            Video
+                                        </option>
+                                        <option value="business-growth">
+                                            Business Growth
+                                        </option>
+                                        <option value="other">
+                                            Something else
+                                        </option>
+                                    </select>
+                                </div>
+
+
+                                <div className="contact-v2-field">
+                                    <label htmlFor="message">TELL US MORE</label>
+
+                                    <textarea
+                                        id="message"
+                                        placeholder="Tell us about your business, project or idea..."
+                                    />
+                                </div>
+
+
+                                <button
+                                    type="submit"
+                                    className="contact-v2-submit"
                                 >
-                                    <option value="" disabled>
-                                        Select a service
-                                    </option>
+                                    <span>Start a conversation</span>
+                                    <span className="contact-v2-submit-arrow">↗</span>
+                                </button>
 
-                                    <option value="website">
-                                        Website / Web Development
-                                    </option>
+                            </form>
 
-                                    <option value="design">
-                                        Graphic Design
-                                    </option>
-
-                                    <option value="social-media">
-                                        Social Media Management
-                                    </option>
-
-                                    <option value="meta-ads">
-                                        Meta Advertising
-                                    </option>
-
-                                    <option value="business-growth">
-                                        Business Growth
-                                    </option>
-
-                                    <option value="other">
-                                        Something else
-                                    </option>
-                                </select>
-
-                            </div>
-
-
-                            <div className="contact-form-row">
-
-                                <label>
-                                    TELL US ABOUT IT
-                                </label>
-
-                                <textarea
-                                    name="message"
-                                    rows="5"
-                                    placeholder="Tell us about your project, goals or idea..."
-                                />
-
-                            </div>
-
-
-                            <button
-                                type="submit"
-                                className="contact-submit"
-                            >
-                                Send enquiry
-                                <span>↗</span>
-                            </button>
-
-                        </form>
+                        </div>
 
                     </div>
 
                 </div>
-
             </section>
 
 
             {/* =====================================================
-          SERVICES QUICK LINKS
+          SERVICES
       ===================================================== */}
 
-            <section className="contact-services">
-
+            <section className="contact-v2-services">
                 <div className="site-container">
 
-                    <div className="section-topline">
+                    <div className="contact-v2-section-label">
                         <span>WHAT WE CAN HELP WITH</span>
-                        <span>02 — SERVICES</span>
+                        <span>04 — SERVICES</span>
                     </div>
 
-                    <div className="contact-service-grid">
+                    <div className="contact-v2-services-heading">
+                        <h2>
+                            Not sure where
+                            <br />
+                            to <span>start?</span>
+                        </h2>
 
-                        <a href="/services/websites">
+                        <p>
+                            Start with the problem. We&apos;ll help you figure
+                            out the right solution.
+                        </p>
+                    </div>
+
+
+                    <div className="contact-v2-service-list">
+
+                        <Link href="/services/websites">
                             <span>01</span>
-                            <strong>Websites</strong>
+                            <strong>Website / Application</strong>
                             <em>↗</em>
-                        </a>
+                        </Link>
 
-                        <a href="/services/design">
+                        <Link href="/services/design">
                             <span>02</span>
-                            <strong>Design</strong>
+                            <strong>Creative Design</strong>
                             <em>↗</em>
-                        </a>
+                        </Link>
 
-                        <a href="/services/social-media">
+                        <Link href="/services/product-design">
                             <span>03</span>
+                            <strong>Product Design</strong>
+                            <em>↗</em>
+                        </Link>
+
+                        <Link href="/services/social-media">
+                            <span>04</span>
                             <strong>Social Media</strong>
                             <em>↗</em>
-                        </a>
+                        </Link>
 
-                        <a href="/services/meta-ads">
-                            <span>04</span>
+                        <Link href="/services/meta-ads">
+                            <span>05</span>
                             <strong>Meta Ads</strong>
                             <em>↗</em>
-                        </a>
+                        </Link>
 
-                        <a href="/services/business-growth">
-                            <span>05</span>
+                        <Link href="/services/video">
+                            <span>06</span>
+                            <strong>Video</strong>
+                            <em>↗</em>
+                        </Link>
+
+                        <Link href="/services/business-growth">
+                            <span>07</span>
                             <strong>Business Growth</strong>
                             <em>↗</em>
-                        </a>
+                        </Link>
 
                     </div>
 
                 </div>
-
             </section>
 
 
@@ -272,30 +298,26 @@ export default function Contact() {
           FINAL CTA
       ===================================================== */}
 
-            <section className="contact-final">
-
+            <section className="contact-v2-final">
                 <div className="site-container">
 
-                    <p>
-                        NO BIG PRESENTATION NEEDED.
-                    </p>
+                    <p>GOOD IDEAS START WITH A CONVERSATION.</p>
 
                     <h2>
-                        Just tell us
+                        Have something
                         <br />
-                        <span>what you need.</span>
+                        in <span>mind?</span>
                     </h2>
 
                     <a
-                        href="mailto:hello@meetscripts.com"
-                        className="hero-primary"
+                        href="mailto:ms@meetscriptstech.com"
+                        className="contact-v2-final-button"
                     >
-                        Email us
+                        ms@meetscriptstech.com
                         <span>↗</span>
                     </a>
 
                 </div>
-
             </section>
 
         </main>

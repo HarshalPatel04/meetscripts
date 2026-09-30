@@ -39,14 +39,14 @@ export default function Services() {
 
 
             {/* =====================================================
-          SERVICES
-      ===================================================== */}
+    SERVICES
+===================================================== */}
 
             <section className="services-page-list">
 
                 <div className="site-container">
 
-                    {/* WEBSITE */}
+                    {/* WEBSITE / APPLICATION */}
 
                     <a
                         href="/services/websites"
@@ -64,20 +64,20 @@ export default function Services() {
                             </p>
 
                             <h2>
-                                Websites
+                                Website / Application
                             </h2>
 
                             <p className="service-page-description">
-                                Modern, responsive websites designed around
-                                your brand, audience and business goals.
+                                Modern websites and custom applications designed
+                                around your brand, audience and business goals.
                             </p>
 
                             <div className="service-feature-list">
                                 <span>Custom UI/UX</span>
                                 <span>Responsive Design</span>
+                                <span>Web Applications</span>
+                                <span>E-Commerce</span>
                                 <span>Performance</span>
-                                <span>SEO Ready</span>
-                                <span>CMS</span>
                                 <span>Lead Generation</span>
                             </div>
 
@@ -134,6 +134,50 @@ export default function Services() {
                     </a>
 
 
+                    {/* PRODUCT DESIGN */}
+
+                    <a
+                        href="/services/product-design"
+                        className="service-page-item"
+                    >
+
+                        <div className="service-page-number">
+                            03
+                        </div>
+
+                        <div className="service-page-main">
+
+                            <p className="service-page-label">
+                                PRODUCT
+                            </p>
+
+                            <h2>
+                                Product Design
+                            </h2>
+
+                            <p className="service-page-description">
+                                Packaging, boxes, labels and product visuals designed
+                                to make your products look professional and stand out.
+                            </p>
+
+                            <div className="service-feature-list">
+                                <span>Product Packaging</span>
+                                <span>Box Design</span>
+                                <span>Label Design</span>
+                                <span>Product Visuals</span>
+                                <span>Packaging Mockups</span>
+                                <span>Print-ready Design</span>
+                            </div>
+
+                        </div>
+
+                        <div className="service-page-arrow">
+                            ↗
+                        </div>
+
+                    </a>
+
+
                     {/* SOCIAL MEDIA */}
 
                     <a
@@ -142,7 +186,7 @@ export default function Services() {
                     >
 
                         <div className="service-page-number">
-                            03
+                            04
                         </div>
 
                         <div className="service-page-main">
@@ -186,7 +230,7 @@ export default function Services() {
                     >
 
                         <div className="service-page-number">
-                            04
+                            05
                         </div>
 
                         <div className="service-page-main">
@@ -222,6 +266,50 @@ export default function Services() {
                     </a>
 
 
+                    {/* VIDEO */}
+
+                    <a
+                        href="/services/video"
+                        className="service-page-item"
+                    >
+
+                        <div className="service-page-number">
+                            06
+                        </div>
+
+                        <div className="service-page-main">
+
+                            <p className="service-page-label">
+                                MOTION
+                            </p>
+
+                            <h2>
+                                Video
+                            </h2>
+
+                            <p className="service-page-description">
+                                Video editing, motion graphics, animation and
+                                visual effects that help your brand communicate with impact.
+                            </p>
+
+                            <div className="service-feature-list">
+                                <span>Video Editing</span>
+                                <span>Motion Graphics</span>
+                                <span>2D Animation</span>
+                                <span>VFX</span>
+                                <span>Brand Videos</span>
+                                <span>Social Videos</span>
+                            </div>
+
+                        </div>
+
+                        <div className="service-page-arrow">
+                            ↗
+                        </div>
+
+                    </a>
+
+
                     {/* BUSINESS GROWTH */}
 
                     <a
@@ -230,7 +318,7 @@ export default function Services() {
                     >
 
                         <div className="service-page-number">
-                            05
+                            07
                         </div>
 
                         <div className="service-page-main">
