@@ -147,7 +147,7 @@ export default function Work() {
                         {/* PROJECT 01 */}
 
                         <a
-                            href="#"
+                            href="https://www.kkenterprisesolar.com"
                             className="work-project-card"
                         >
 
@@ -155,31 +155,12 @@ export default function Work() {
 
                                 <div className="mini-browser">
 
-                                    <div className="mini-browser-bar">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
 
-                                    <div className="solar-screen">
-
-                                        <small>
-                                            CLEAN ENERGY
-                                        </small>
-
-                                        <strong>
-                                            POWERING
-                                            <br />
-                                            A BETTER
-                                            <br />
-                                            TOMORROW.
-                                        </strong>
-
-                                        <em>
-                                            SOLAR
-                                        </em>
-
-                                    </div>
+                                    <img
+                                        src="/services/solar.jpg"
+                                        alt="Solar energy project"
+                                        className="w-full h-full"
+                                    />
 
                                 </div>
 
@@ -220,21 +201,12 @@ export default function Work() {
 
                                 <div className="fashion-screen">
 
-                                    <span>
-                                        LEGACY
-                                    </span>
 
-                                    <strong>
-                                        TIME
-                                        <br />
-                                        LIVES
-                                        <br />
-                                        ON.
-                                    </strong>
-
-                                    <small>
-                                        WATCH COLLECTION
-                                    </small>
+                                    <img
+                                        src="/services/product-design.png"
+                                        alt="Product design"
+                                        className="w-full h-full object-cover"
+                                    />
 
                                 </div>
 
@@ -246,11 +218,11 @@ export default function Work() {
                                 <div>
 
                                     <span>
-                                        BRAND × WEB
+                                        BRAND × DESIGN
                                     </span>
 
                                     <h3>
-                                        Harlat
+                                        Product Design
                                     </h3>
 
                                 </div>
@@ -267,7 +239,7 @@ export default function Work() {
                         {/* PROJECT 03 */}
 
                         <a
-                            href="#"
+                            href="https://www.skikinternational.com"
                             className="work-project-card"
                         >
 
@@ -275,21 +247,11 @@ export default function Work() {
 
                                 <div className="business-screen">
 
-                                    <span>
-                                        BUSINESS
-                                    </span>
-
-                                    <strong>
-                                        YOUR
-                                        <br />
-                                        BUSINESS.
-                                        <br />
-                                        ONLINE.
-                                    </strong>
-
-                                    <small>
-                                        DIGITAL EXPERIENCE
-                                    </small>
+                                    <img
+                                        src="/services/website.png"
+                                        alt="Overseas business website design"
+                                        className="w-full h-full"
+                                    />
 
                                 </div>
 
@@ -328,23 +290,13 @@ export default function Work() {
 
                             <div className="work-project-visual project-creative">
 
-                                <div className="creative-screen">
+                                    <div className="creative-screen">
 
-                                    <span>
-                                        CREATIVE
-                                    </span>
-
-                                    <strong>
-                                        MAKE
-                                        <br />
-                                        SOME
-                                        <br />
-                                        NOISE.
-                                    </strong>
-
-                                    <small>
-                                        SOCIAL CAMPAIGN
-                                    </small>
+                                        <img
+                                            src="/services/social-media.png"
+                                            alt="Social media campaign design"
+                                            className="w-full h-full object-cover"
+                                        />
 
                                 </div>
 
@@ -447,7 +399,7 @@ export default function Work() {
                             <span>07</span>
                             <strong>Video Production</strong>
                         </div>
-                        
+
                         <div>
                             <span>08</span>
                             <strong>Digital Growth</strong>

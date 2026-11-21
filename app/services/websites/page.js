@@ -68,12 +68,12 @@ export default function Websites() {
                                         <i></i>
                                     </div>
 
-                                    <span>solartech.com</span>
+                                    <span>skikinterntational.org</span>
 
                                 </div>
 
                                 <img
-                                    src="/work/work-2.jpg"
+                                    src="/work/work-1.jpg"
                                     alt="Solar website design"
                                 />
 
