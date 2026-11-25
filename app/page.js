@@ -114,7 +114,7 @@ export default function Home() {
                     IDEAS INTO IMPACT
                   </p>
 
-                  <h1 className="text-[clamp(4.5rem,12vw,9rem)] font-black leading-[0.76] tracking-[-0.1em] text-[#111111]">
+                  <h1 className="text-[clamp(4.5rem,7.5vw,9rem)] font-black leading-[0.76] tracking-[-0.1em] text-[#111111]">
                     MAKE
                     <br />
                     IT

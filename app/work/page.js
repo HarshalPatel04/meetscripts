@@ -15,7 +15,7 @@ const projects = [
         description:
             "A premium digital experience for an international education and immigration consultancy.",
         image: "/services/website.png",
-        href: "https://skikinternational.com",
+        href: "https://skikinternational.org",
         external: true,
         type: "website",
         background: "bg-[#e9edf5]",
