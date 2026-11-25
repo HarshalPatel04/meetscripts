@@ -167,7 +167,7 @@ export default function ServicesPage() {
                             <article
                                 id={`service-${service.number}`}
                                 key={service.number}
-                                className="group scroll-mt-28 grid overflow-hidden border border-neutral-200 bg-white transition-all duration-300 hover:border-[#df2929]/50 hover:shadow-xl hover:shadow-black/[0.04] lg:grid-cols-[0.8fr_1.2fr]"
+                                className="group scroll-mt-28 grid overflow-hidden border border-neutral-200 rounded-2xl bg-white transition-all duration-300 hover:border-[#df2929]/50 hover:shadow-xl hover:shadow-black/[0.04] lg:grid-cols-[0.8fr_1.2fr]"
                             >
                                 {/* LEFT */}
                                 <div className={`flex min-h-64 flex-col justify-between p-7 sm:p-10 ${service.accent}`}>
