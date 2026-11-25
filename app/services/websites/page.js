@@ -1,865 +1,346 @@
-export default function Websites() {
+import Link from "next/link";
+
+export const metadata = {
+    title: "Website Design & Development | Meetscripts Technologies",
+    description:
+        "Professional static, dynamic and e-commerce website design and development for businesses.",
+};
+
+const offerings = [
+    {
+        number: "01",
+        title: "Static Website",
+        description:
+            "Fast, focused websites for businesses that need a clear and professional online presence.",
+        features: ["Business websites", "Landing pages", "Portfolio websites"],
+    },
+    {
+        number: "02",
+        title: "Dynamic Website",
+        description:
+            "Flexible websites with editable content and features that can grow alongside your business.",
+        features: ["Content management", "Custom functionality", "Business platforms"],
+    },
+    {
+        number: "03",
+        title: "E-commerce Website",
+        description:
+            "Online stores designed to present products clearly and make purchasing straightforward.",
+        features: ["Product catalogues", "Shopping experience", "Store management"],
+    },
+];
+
+const principles = [
+    {
+        number: "01",
+        title: "Designed for people",
+        description:
+            "Clear layouts and intuitive navigation help visitors find what they need.",
+    },
+    {
+        number: "02",
+        title: "Built for performance",
+        description:
+            "Responsive, carefully developed websites designed to load smoothly across devices.",
+    },
+    {
+        number: "03",
+        title: "Focused on your goals",
+        description:
+            "Every page has a purpose, whether that is generating enquiries, explaining services or selling products.",
+    },
+];
+
+export default function WebsitesPage() {
     return (
-        <main>
-
-            {/* =====================================================
-          HERO
-      ===================================================== */}
-
-            <section className="website-service-hero">
-                <div className="site-container">
-
-                    <div className="section-topline">
-                        <span>WEBSITE DEVELOPMENT</span>
-                        <span>01 — SERVICES</span>
+        <main className="min-h-screen overflow-hidden bg-white text-[#111111]">
+            {/* HERO */}
+            <section className="px-5 pb-10 pt-6 sm:px-8 sm:pt-6 lg:px-12 lg:pb-10">
+                <div className="mx-auto max-w-7xl">
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-200 pb-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-500 sm:text-xs">
+                        <span>OUR SERVICES / WEBSITE</span>
+                        <span>04 — 05</span>
                     </div>
 
-                    <div className="website-hero-grid">
-
-                        <div className="website-hero-copy">
-
-                            <p className="website-eyebrow">
-                                DESIGN × DEVELOPMENT
+                    <div className="grid items-center gap-14 pt-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:pt-20">
+                        <div>
+                            <p className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-[#df2929]">
+                                <span className="h-px w-8 bg-[#df2929]" />
+                                YOUR BUSINESS DESERVES A BETTER WEBSITE
                             </p>
 
-                            <h1>
-                                Websites that
+                            <h1 className="text-5xl font-semibold leading-[0.98] tracking-[-0.06em] sm:text-6xl md:text-7xl lg:text-[82px]">
+                                Built for your
                                 <br />
-                                <span>work for you.</span>
+                                <span className="text-[#df2929]">next step.</span>
                             </h1>
 
-                            <p className="website-hero-description">
-                                We design and develop modern, high-performing websites
-                                that help businesses build a stronger digital presence
-                                and generate real growth.
+                            <p className="mt-8 max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg">
+                                We design and develop websites that help people understand
+                                your business, explore your offering and take the next step
+                                with confidence.
                             </p>
 
-                            <div className="hero-actions">
-
-                                <a
-                                    href="/contact"
-                                    className="hero-primary"
-                                >
-                                    Start a website
-                                    <span>↗</span>
-                                </a>
-
-                                <a
-                                    href="#features"
-                                    className="hero-secondary"
-                                >
-                                    Explore features
-                                </a>
-
-                            </div>
-
+                            <Link
+                                href="/contact"
+                                className="mt-9 inline-flex items-center gap-8 bg-[#df2929] px-7 py-5 text-xs font-bold uppercase tracking-[0.15em] text-white transition-colors hover:bg-[#111111]"
+                            >
+                                DISCUSS YOUR WEBSITE
+                                <span className="text-xl">↗</span>
+                            </Link>
                         </div>
 
+                        {/* WEBSITE VISUAL */}
+                        <div className="relative mx-auto aspect-[4/4.5] w-full max-w-lg bg-neutral-100 p-5 sm:p-8">
+                            <div className="absolute right-5 top-5 text-[9px] font-bold uppercase tracking-[0.2em] text-neutral-400 sm:right-8 sm:top-8">
+                                DIGITAL STUDIO / 004
+                            </div>
 
-                        <div className="website-hero-visual">
+                            <div className="absolute left-[9%] top-[19%] w-[82%] rotate-[-3deg] border border-neutral-200 bg-white shadow-2xl shadow-black/10">
+                                <div className="flex items-center gap-1.5 border-b border-neutral-200 px-4 py-3">
+                                    <span className="h-2 w-2 rounded-full bg-[#df2929]" />
+                                    <span className="h-2 w-2 rounded-full bg-neutral-300" />
+                                    <span className="h-2 w-2 rounded-full bg-neutral-300" />
 
-                            <div className="website-browser">
-
-                                <div className="website-browser-bar">
-
-                                    <div className="browser-dots">
-                                        <i></i>
-                                        <i></i>
-                                        <i></i>
+                                    <div className="ml-3 flex-1 bg-neutral-100 px-3 py-1 text-[8px] tracking-wider text-neutral-400">
+                                        YOURBRAND.COM
                                     </div>
-
-                                    <span>skikinterntational.org</span>
-
                                 </div>
 
-                                <img
-                                    src="/work/work-1.jpg"
-                                    alt="Solar website design"
-                                />
+                                <div className="p-5 sm:p-7">
+                                    <p className="text-[8px] font-bold uppercase tracking-[0.18em] text-[#df2929]">
+                                        BUILT AROUND YOUR BUSINESS
+                                    </p>
 
+                                    <h2 className="mt-5 text-4xl font-black leading-[0.85] tracking-[-0.08em] sm:text-6xl">
+                                        MAKE
+                                        <br />
+                                        IT <span className="text-[#df2929]">WORK.</span>
+                                    </h2>
+
+                                    <div className="mt-6 h-1 w-16 bg-[#df2929]" />
+
+                                    <div className="mt-6 grid grid-cols-3 gap-2">
+                                        <div className="h-12 bg-neutral-100 sm:h-16" />
+                                        <div className="h-12 bg-neutral-200 sm:h-16" />
+                                        <div className="h-12 bg-neutral-100 sm:h-16" />
+                                    </div>
+                                </div>
                             </div>
 
-                            <div className="website-phone">
-
-                                <img
-                                    src="/work/work-4.jpg"
-                                    alt="Responsive website on mobile"
-                                />
-
+                            <div className="absolute bottom-[12%] right-[9%] flex h-20 w-20 rotate-12 items-center justify-center rounded-full bg-[#df2929] text-center text-[9px] font-bold uppercase leading-tight tracking-wider text-white sm:h-24 sm:w-24">
+                                DESIGN
+                                <br />
+                                DEVELOP
+                                <br />
+                                GROW
                             </div>
 
+                            <div className="absolute bottom-5 left-5 text-[9px] font-bold uppercase tracking-[0.2em] text-neutral-400 sm:bottom-8 sm:left-8">
+                                BUILT WITH PURPOSE
+                            </div>
                         </div>
-
                     </div>
 
+                    <div className="mt-16 grid grid-cols-2 gap-5 border-t border-neutral-200 pt-6 sm:grid-cols-3">
+                        {["Business Websites", "Custom Platforms", "Online Stores"].map(
+                            (item, index) => (
+                                <div key={item} className="flex items-center gap-3">
+                                    <span className="text-xs font-bold text-[#df2929]">
+                                        0{index + 1}
+                                    </span>
+
+                                    <span className="text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                                        {item}
+                                    </span>
+                                </div>
+                            )
+                        )}
+                    </div>
                 </div>
             </section>
 
-
-            {/* =====================================================
-          FEATURES
-      ===================================================== */}
-
-            <section
-                className="website-features"
-                id="features"
-            >
-
-                <div className="site-container">
-
-                    <div className="section-topline">
-                        <span>WHAT YOU GET</span>
-                        <span>02 — FEATURES</span>
+            {/* INTRO */}
+            <section className="bg-neutral-50 px-5 py-10 sm:px-8 lg:px-12 lg:py-10">
+                <div className="mx-auto max-w-7xl">
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-200 pb-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-500 sm:text-xs">
+                        <span>01 — USEFUL BY DESIGN</span>
+                        <span>WEBSITE DEVELOPMENT</span>
                     </div>
 
-
-                    <div className="website-features-heading">
-
-                        <h2>
-                            Built around
+                    <div className="grid gap-8 pt-12 lg:grid-cols-2 lg:gap-20 lg:pt-16">
+                        <h2 className="text-4xl font-semibold leading-[1.05] tracking-[-0.05em] sm:text-5xl lg:text-6xl">
+                            Your website
                             <br />
-                            <span>your business.</span>
+                            <span className="text-[#df2929]">works for you.</span>
                         </h2>
 
-                        <p>
-                            Every website is designed with your brand, customers
-                            and business goals in mind.
-                        </p>
+                        <div className="max-w-xl">
+                            <p className="text-lg leading-relaxed text-neutral-700 sm:text-xl">
+                                Your website should do more than look good. It should explain
+                                what you offer, build trust, work smoothly on mobile and make
+                                it easy for visitors to contact you or buy from you.
+                            </p>
 
+                            <p className="mt-5 text-sm leading-relaxed text-neutral-500 sm:text-base">
+                                We focus on the right structure, clean design and practical
+                                functionality to create a website that supports your business
+                                goals.
+                            </p>
+                        </div>
                     </div>
-
-
-                    <div className="website-feature-grid">
-
-                        <div className="website-feature">
-                            <span>01</span>
-
-                            <div>
-                                <h3>Custom UI/UX</h3>
-
-                                <p>
-                                    A unique visual experience created around
-                                    your brand instead of a generic template.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>02</span>
-
-                            <div>
-                                <h3>Responsive Design</h3>
-
-                                <p>
-                                    A consistent experience across desktop,
-                                    tablet and mobile devices.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>03</span>
-
-                            <div>
-                                <h3>High Performance</h3>
-
-                                <p>
-                                    Lightweight development focused on speed,
-                                    usability and smooth interaction.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>04</span>
-
-                            <div>
-                                <h3>SEO Ready</h3>
-
-                                <p>
-                                    Clean structure and technical foundations
-                                    prepared for search visibility.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>05</span>
-
-                            <div>
-                                <h3>CMS Integration</h3>
-
-                                <p>
-                                    Make content updates easier without changing
-                                    the entire website.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>06</span>
-
-                            <div>
-                                <h3>Lead Generation</h3>
-
-                                <p>
-                                    Contact forms, WhatsApp, CTAs and conversion
-                                    focused page structures.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
-
             </section>
 
+            {/* WEBSITE TYPES */}
+            <section className="px-5 py-10 sm:px-8 lg:px-12 lg:py-10">
+                <div className="mx-auto max-w-7xl">
+                    <div className="flex flex-wrap items-end justify-between gap-5 border-b border-neutral-200 pb-7">
+                        <div>
+                            <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#df2929]">
+                                OUR CAPABILITIES
+                            </p>
 
-            {/* =====================================================
-          WEBSITE TYPES
-      ===================================================== */}
+                            <h2 className="text-4xl font-semibold tracking-[-0.05em] sm:text-5xl lg:text-6xl">
+                                The right website.
+                            </h2>
+                        </div>
 
-            <section className="website-types">
-
-                <div className="site-container">
-
-                    <div className="section-topline">
-                        <span>WHAT WE BUILD</span>
-                        <span>03 — WEBSITES</span>
+                        <span className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
+                            03 WEBSITE TYPES
+                        </span>
                     </div>
 
+                    <div className="mt-10 grid gap-5 lg:grid-cols-3">
+                        {offerings.map((item) => (
+                            <article
+                                key={item.number}
+                                className="group flex flex-col border border-neutral-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#df2929]/50 hover:shadow-xl hover:shadow-black/[0.04] sm:p-9"
+                            >
+                                <div className="flex items-center justify-between">
+                                    <span className="text-sm font-bold text-[#df2929]">
+                                        {item.number}
+                                    </span>
 
-                    <div className="website-types-heading">
+                                    <span className="text-2xl text-neutral-300 transition-colors group-hover:text-[#df2929]">
+                                        ↗
+                                    </span>
+                                </div>
 
-                        <h2>
-                            One website.
-                            <br />
-                            <span>Different possibilities.</span>
-                        </h2>
+                                <h3 className="mt-12 text-3xl font-semibold tracking-[-0.05em]">
+                                    {item.title}
+                                </h3>
 
+                                <p className="mt-4 min-h-20 text-sm leading-relaxed text-neutral-500">
+                                    {item.description}
+                                </p>
+
+                                <div className="mt-8 border-t border-neutral-200 pt-6">
+                                    <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-400">
+                                        POSSIBILITIES
+                                    </p>
+
+                                    <ul className="space-y-3">
+                                        {item.features.map((feature) => (
+                                            <li
+                                                key={feature}
+                                                className="flex items-center gap-3 text-sm text-neutral-600"
+                                            >
+                                                <span className="h-1.5 w-1.5 bg-[#df2929]" />
+                                                {feature}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </article>
+                        ))}
                     </div>
+                </div>
+            </section>
 
+            {/* PRINCIPLES */}
+            <section className="bg-neutral-50 px-5 py-10 sm:px-8 lg:px-12 lg:py-10">
+                <div className="mx-auto max-w-7xl">
+                    <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+                        <div>
+                            <p className="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-[#df2929]">
+                                02 — OUR APPROACH
+                            </p>
 
-                    <div className="website-types-grid">
+                            <h2 className="text-4xl font-semibold leading-[1.05] tracking-[-0.05em] sm:text-5xl lg:text-6xl">
+                                Not just a
+                                <br />
+                                <span className="text-[#df2929]">good-looking</span>
+                                <br />
+                                website.
+                            </h2>
 
-                        <div className="website-type">
-                            <span>01</span>
-
-                            <h3>
-                                Business Websites
-                            </h3>
-
-                            <p>
-                                Professional websites for companies that
-                                need a strong digital presence.
+                            <p className="mt-6 max-w-sm text-sm leading-relaxed text-neutral-500 sm:text-base">
+                                We think about the people using your website and what your
+                                business needs them to do.
                             </p>
                         </div>
 
+                        <div className="divide-y divide-neutral-200">
+                            {principles.map((item) => (
+                                <div
+                                    key={item.number}
+                                    className="grid gap-3 py-7 sm:grid-cols-[60px_1fr] sm:gap-5"
+                                >
+                                    <span className="text-sm font-bold text-[#df2929]">
+                                        {item.number}
+                                    </span>
 
-                        <div className="website-type">
-                            <span>02</span>
+                                    <div>
+                                        <h3 className="text-2xl font-semibold tracking-[-0.04em]">
+                                            {item.title}
+                                        </h3>
 
-                            <h3>
-                                Landing Pages
-                            </h3>
+                                        <p className="mt-2 max-w-lg text-sm leading-relaxed text-neutral-500 sm:text-base">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                            <p>
-                                Focused pages designed for campaigns,
-                                advertisements and lead generation.
+            {/* CTA */}
+            <section className="bg-[#111111] px-5 py-10 text-white sm:px-8 lg:px-12 lg:py-10">
+                <div className="mx-auto max-w-7xl">
+                    <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/15 pb-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/50 sm:text-xs">
+                        <span>READY TO BUILD YOUR ONLINE PRESENCE?</span>
+                        <span>LET&apos;S GET STARTED</span>
+                    </div>
+
+                    <div className="grid gap-10 pt-12 lg:grid-cols-[1fr_auto] lg:items-end lg:pt-20">
+                        <div>
+                            <h2 className="text-5xl font-semibold leading-[0.98] tracking-[-0.06em] sm:text-6xl lg:text-8xl">
+                                Let&apos;s build
+                                <br />
+                                a <span className="text-[#df2929]">better</span>
+                                <br />
+                                website.
+                            </h2>
+
+                            <p className="mt-7 max-w-lg text-base leading-relaxed text-white/60 sm:text-lg">
+                                Tell us about your business and what you want your website to
+                                achieve. We&apos;ll help you find the right direction.
                             </p>
                         </div>
 
-
-                        <div className="website-type">
-                            <span>03</span>
-
-                            <h3>
-                                E-commerce
-                            </h3>
-
-                            <p>
-                                Product-focused online stores designed
-                                around a smooth buying experience.
-                            </p>
-                        </div>
-
-
-                        <div className="website-type">
-                            <span>04</span>
-
-                            <h3>
-                                Portfolio Websites
-                            </h3>
-
-                            <p>
-                                Creative websites that present your work,
-                                projects and personal brand.
-                            </p>
-                        </div>
-
+                        <Link
+                            href="/contact"
+                            className="inline-flex w-fit items-center gap-8 bg-[#df2929] px-7 py-5 text-xs font-bold uppercase tracking-[0.15em] text-white transition-colors hover:bg-white hover:text-[#111111]"
+                        >
+                            START A WEBSITE PROJECT
+                            <span className="text-xl">↗</span>
+                        </Link>
                     </div>
-
                 </div>
-
             </section>
-
-
-            {/* =====================================================
-          CTA
-      ===================================================== */}
-
-            <section className="website-service-cta">
-
-                <div className="site-container">
-
-                    <p>
-                        HAVE A WEBSITE IN MIND?
-                    </p>
-
-                    <h2>
-                        Let's build something
-                        <br />
-                        <span>worth visiting.</span>
-                    </h2>
-
-                    <a
-                        href="/contact"
-                        className="hero-primary"
-                    >
-                        Start a website
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </section>
-
-            {/* =====================================================
-    APPLICATIONS
-===================================================== */}
-
-            <section className="website-types">
-
-                <div className="site-container">
-
-                    {/* SECTION TOPLINE */}
-
-                    <div className="section-topline">
-                        <span>APPLICATION DEVELOPMENT</span>
-                        <span>04 — APPLICATIONS</span>
-                    </div>
-
-
-                    {/* INTRO */}
-
-                    <div className="website-types-heading">
-
-                        <h2>
-                            More than
-                            <br />
-                            <span>just Application.</span>
-                        </h2>
-
-                        <p>
-                            We build custom web applications that help businesses
-                            manage operations, serve customers and turn ideas into
-                            useful digital products.
-                        </p>
-
-                    </div>
-
-
-                    {/* APPLICATION TYPES */}
-
-                    <div className="website-types-grid">
-
-                        <div className="website-type">
-                            <span>01</span>
-
-                            <h3>
-                                Web Applications
-                            </h3>
-
-                            <p>
-                                Browser-based applications designed around your
-                                specific business requirements, workflows and users.
-                            </p>
-                        </div>
-
-
-                        <div className="website-type">
-                            <span>02</span>
-
-                            <h3>
-                                Business Applications
-                            </h3>
-
-                            <p>
-                                Custom systems that help businesses manage tasks,
-                                information, operations and everyday processes.
-                            </p>
-                        </div>
-
-
-                        <div className="website-type">
-                            <span>03</span>
-
-                            <h3>
-                                Customer Portals
-                            </h3>
-
-                            <p>
-                                Secure customer-facing platforms for accessing
-                                accounts, services, information and requests.
-                            </p>
-                        </div>
-
-
-                        <div className="website-type">
-                            <span>04</span>
-
-                            <h3>
-                                Custom Platforms
-                            </h3>
-
-                            <p>
-                                Digital platforms built from the ground up for
-                                unique products, services and business ideas.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            {/* =====================================================
-    APPLICATION CAPABILITIES
-===================================================== */}
-
-            <section className="website-features">
-
-                <div className="site-container">
-
-                    <div className="section-topline">
-                        <span>APPLICATION CAPABILITIES</span>
-                        <span>05 — CAPABILITIES</span>
-                    </div>
-
-
-                    <div className="website-features-heading">
-
-                        <h2>
-                            Built around
-                            <br />
-                            <span>how you work.</span>
-                        </h2>
-
-                        <p>
-                            Applications are designed around the people,
-                            processes and problems they need to solve.
-                        </p>
-
-                    </div>
-
-
-                    <div className="website-feature-grid">
-
-                        <div className="website-feature">
-                            <span>01</span>
-
-                            <div>
-                                <h3>User Authentication</h3>
-
-                                <p>
-                                    Secure login, registration and user access
-                                    experiences designed around different types
-                                    of users.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>02</span>
-
-                            <div>
-                                <h3>Dashboards</h3>
-
-                                <p>
-                                    Clear dashboards that bring important
-                                    information, activities and business data
-                                    into one place.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>03</span>
-
-                            <div>
-                                <h3>Database Systems</h3>
-
-                                <p>
-                                    Structured data management designed to keep
-                                    application information organized and accessible.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>04</span>
-
-                            <div>
-                                <h3>Admin Panels</h3>
-
-                                <p>
-                                    Custom admin interfaces for managing users,
-                                    content, products, orders and application data.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>05</span>
-
-                            <div>
-                                <h3>API Integration</h3>
-
-                                <p>
-                                    Connect applications with external services,
-                                    platforms and business systems through APIs.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>06</span>
-
-                            <div>
-                                <h3>Responsive Experience</h3>
-
-                                <p>
-                                    Applications designed to remain practical and
-                                    usable across desktop, tablet and mobile devices.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            {/* =====================================================
-    APPLICATION USE CASES
-===================================================== */}
-
-            <section className="application-use-cases">
-
-                <div className="site-container">
-
-                    <div className="section-topline">
-                        <span>WHAT APPLICATIONS CAN DO</span>
-                        <span>06 — USE CASES</span>
-                    </div>
-
-
-                    <div className="application-use-cases-heading">
-
-                        <h2>
-                            Applications built
-                            <br />
-                            <span>around real needs.</span>
-                        </h2>
-
-                        <p>
-                            From internal business tools to customer-facing
-                            platforms, we build applications around how
-                            your business actually works.
-                        </p>
-
-                    </div>
-
-
-                    <div className="application-use-cases-grid">
-
-                        {/* 01 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                01
-                            </span>
-
-                            <h3>
-                                CRM Systems
-                            </h3>
-                        </div>
-
-
-                        {/* 02 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                02
-                            </span>
-
-                            <h3>
-                                Booking Systems
-                            </h3>
-                        </div>
-
-
-                        {/* 03 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                03
-                            </span>
-
-                            <h3>
-                                Management Systems
-                            </h3>
-                        </div>
-
-
-                        {/* 04 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                04
-                            </span>
-
-                            <h3>
-                                Customer Platforms
-                            </h3>
-                        </div>
-
-
-                        {/* 05 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                05
-                            </span>
-
-                            <h3>
-                                E-commerce Platforms
-                            </h3>
-                        </div>
-
-
-                        {/* 06 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                06
-                            </span>
-
-                            <h3>
-                                Custom SaaS Products
-                            </h3>
-                        </div>
-
-
-                        {/* 07 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                07
-                            </span>
-
-                            <h3>
-                                Internal Business Tools
-                            </h3>
-                        </div>
-
-
-                        {/* 08 */}
-
-                        <div className="application-use-case">
-                            <span className="application-use-case-number">
-                                08
-                            </span>
-
-                            <h3>
-                                Custom Digital Platforms
-                            </h3>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            {/* =====================================================
-    APPLICATION APPROACH
-===================================================== */}
-
-            <section className="website-features">
-
-                <div className="site-container">
-
-                    <div className="section-topline">
-                        <span>OUR APPROACH</span>
-                        <span>07 — DEVELOPMENT</span>
-                    </div>
-
-
-                    <div className="website-features-heading">
-
-                        <h2>
-                            From an idea
-                            <br />
-                            <span>to a working product.</span>
-                        </h2>
-
-                        <p>
-                            We focus on understanding the problem first,
-                            then design and develop the right digital solution.
-                        </p>
-
-                    </div>
-
-
-                    <div className="website-feature-grid">
-
-                        <div className="website-feature">
-                            <span>01</span>
-
-                            <div>
-                                <h3>Understand</h3>
-
-                                <p>
-                                    We understand your business, users, workflow
-                                    and the problem the application needs to solve.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>02</span>
-
-                            <div>
-                                <h3>Plan</h3>
-
-                                <p>
-                                    We define the features, user flows, structure
-                                    and functionality before development begins.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>03</span>
-
-                            <div>
-                                <h3>Design</h3>
-
-                                <p>
-                                    We create a clear interface that makes the
-                                    application easy to understand and use.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>04</span>
-
-                            <div>
-                                <h3>Develop</h3>
-
-                                <p>
-                                    We turn the approved experience into a
-                                    functional, responsive and connected application.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>05</span>
-
-                            <div>
-                                <h3>Test</h3>
-
-                                <p>
-                                    Features and user flows are reviewed to make
-                                    sure the application works as expected.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="website-feature">
-                            <span>06</span>
-
-                            <div>
-                                <h3>Launch & Improve</h3>
-
-                                <p>
-                                    After launch, the application can continue to
-                                    evolve as your business and users grow.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            {/* =====================================================
-    APPLICATION CTA
-===================================================== */}
-
-            <section className="website-service-cta">
-
-                <div className="site-container">
-
-                    <p>
-                        HAVE AN APPLICATION IDEA?
-                    </p>
-
-                    <h2>
-                        Let's turn your idea
-                        <br />
-                        <span>into something useful.</span>
-                    </h2>
-
-                    <a
-                        href="/contact"
-                        className="hero-primary"
-                    >
-                        Discuss your application
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </section>
-
         </main>
     );
 }

@@ -1,325 +1,301 @@
 import Link from "next/link";
 
+export const metadata = {
+    title: "Contact Us | Meetscripts Technologies",
+    description:
+        "Discuss your next graphics design, printing, video, website or marketing project with Meetscripts Technologies.",
+};
+
+const services = [
+    "Graphics Design",
+    "Printing Solutions",
+    "Video Animation",
+    "Website",
+    "Marketing",
+    "Not sure yet",
+];
+
+const inputStyle =
+    "mt-2 w-full border border-neutral-200 bg-white px-4 py-4 text-sm text-[#111111] outline-none transition-colors placeholder:text-neutral-400 focus:border-[#df2929]";
+
 export default function ContactPage() {
     return (
-        <main className="contact-v2">
-
-            {/* =====================================================
-          HERO
-      ===================================================== */}
-
-            <section className="contact-v2-hero">
-                <div className="site-container">
-
-                    <div className="contact-v2-topline">
-                        <span>CONTACT</span>
-                        <span>01 — LET&apos;S TALK</span>
+        <main className="min-h-screen bg-white text-[#111111]">
+            {/* HERO */}
+            <section className="px-5 pb-16 pt-6 sm:px-8 sm:pt-6 lg:px-12 lg:pb-10">
+                <div className="mx-auto max-w-7xl">
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-200 pb-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-500 sm:text-xs">
+                        <span>CONTACT MEETSCRIPTS</span>
+                        <span>LET&apos;S START A CONVERSATION</span>
                     </div>
 
-                    <div className="contact-v2-hero-content">
-                        <p className="contact-v2-eyebrow">
-                            HAVE AN IDEA IN MIND?
-                        </p>
+                    <div className="grid gap-10 pt-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:gap-16 lg:pt-20">
+                        <div>
+                            <p className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-[#df2929]">
+                                <span className="h-px w-8 bg-[#df2929]" />
+                                HAVE A PROJECT IN MIND?
+                            </p>
 
-                        <h1>
-                            Let&apos;s build
-                            <br />
-                            something <span>great.</span>
-                        </h1>
+                            <h1 className="text-5xl font-semibold leading-[0.98] tracking-[-0.06em] sm:text-6xl md:text-7xl lg:text-[88px]">
+                                Let&apos;s make
+                                <br />
+                                <span className="text-[#df2929]">it matter.</span>
+                            </h1>
+                        </div>
 
-                        <p className="contact-v2-intro">
-                            Whether you need a website, a new brand identity,
-                            better content or a complete digital growth strategy,
-                            tell us what you&apos;re working on.
+                        <p className="max-w-lg text-lg leading-relaxed text-neutral-600 sm:text-xl lg:justify-self-end">
+                            Tell us what you&apos;re building, promoting or improving.
+                            Share a little about your project and we&apos;ll help you find
+                            the right direction.
                         </p>
                     </div>
-
                 </div>
             </section>
 
-
-            {/* =====================================================
-          CONTACT AREA
-      ===================================================== */}
-
-            <section className="contact-v2-main">
-                <div className="site-container">
-
-                    <div className="contact-v2-main-grid">
-
-                        {/* LEFT */}
-                        <div className="contact-v2-info">
-
-                            <div className="contact-v2-section-label">
-                                <span>GET IN TOUCH</span>
-                                <span>02 — CONTACT</span>
-                            </div>
-
-                            <h2>
-                                Start with a
-                                <br />
-                                conversation.
-                            </h2>
-
-                            <p className="contact-v2-info-copy">
-                                You don&apos;t need to know exactly what service you need.
-                                Tell us what you&apos;re trying to achieve and we&apos;ll
-                                help figure out the right direction together.
+            {/* CONTACT CONTENT */}
+            <section className="bg-neutral-50 px-5 py-10 sm:px-8 lg:px-12 lg:py-10">
+                <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+                    {/* CONTACT INFORMATION */}
+                    <div className="flex flex-col justify-between">
+                        <div>
+                            <p className="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-[#df2929]">
+                                GET IN TOUCH
                             </p>
 
-                            <div className="contact-v2-details">
+                            <h2 className="text-4xl font-semibold leading-[1.05] tracking-[-0.05em] sm:text-5xl lg:text-6xl">
+                                Start with
+                                <br />
+                                <span className="text-[#df2929]">a conversation.</span>
+                            </h2>
 
-                                <a href="mailto:ms@meetscriptstech.com">
-                                    <span>EMAIL</span>
-                                    ms@meetscriptstech.com
-                                </a>
-
-                                <a href="tel:+919854090395">
-                                    <span>PHONE</span>
-                                    +91 98540 90395
-                                </a>
-
-                                <div className="contact-v2-social">
-                                    <span>SOCIAL</span>
-
-                                    <div>
-                                        <a href="#" target="_blank" rel="noreferrer">
-                                            Instagram
-                                        </a>
-
-                                        <a href="#" target="_blank" rel="noreferrer">
-                                            Facebook
-                                        </a>
-
-                                        <a href="#" target="_blank" rel="noreferrer">
-                                            LinkedIn
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-
+                            <p className="mt-6 max-w-md text-sm leading-relaxed text-neutral-500 sm:text-base">
+                                Not sure which service fits your requirement? That&apos;s
+                                okay. Start with your goal and we&apos;ll talk through the
+                                options.
+                            </p>
                         </div>
 
+                        <div className="mt-12 space-y-8 border-t border-neutral-200 pt-8">
+                            <div>
+                                <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400">
+                                    EMAIL
+                                </p>
 
-                        {/* RIGHT — FORM */}
-                        <div className="contact-v2-form-wrap">
-
-                            <div className="contact-v2-form-heading">
-                                <span>03 — YOUR PROJECT</span>
-                                <p>Tell us a little about what you&apos;re building.</p>
+                                <a
+                                    href="mailto:ms@meetscriptstech.com"
+                                    className="break-all text-lg font-medium transition-colors hover:text-[#df2929] sm:text-xl"
+                                >
+                                    ms@meetscriptstech.com
+                                </a>
                             </div>
 
-                            <form className="contact-v2-form">
+                            <div>
+                                <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400">
+                                    PHONE
+                                </p>
 
-                                <div className="contact-v2-form-grid">
+                                <a
+                                    href="tel:+919854090395"
+                                    className="text-lg font-medium transition-colors hover:text-[#df2929] sm:text-xl"
+                                >
+                                    +91 98540 90395
+                                </a>
+                            </div>
 
-                                    <div className="contact-v2-field">
-                                        <label htmlFor="name">YOUR NAME</label>
-                                        <input
-                                            id="name"
-                                            type="text"
-                                            placeholder="John Doe"
-                                        />
-                                    </div>
+                            <div>
+                                <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400">
+                                    WHAT WE DO
+                                </p>
 
-                                    <div className="contact-v2-field">
-                                        <label htmlFor="email">EMAIL ADDRESS</label>
-                                        <input
-                                            id="email"
-                                            type="email"
-                                            placeholder="john@example.com"
-                                        />
-                                    </div>
-
+                                <div className="flex flex-wrap gap-2">
+                                    {[
+                                        "Graphics Design",
+                                        "Printing",
+                                        "Video",
+                                        "Website",
+                                        "Marketing",
+                                    ].map((item) => (
+                                        <span
+                                            key={item}
+                                            className="border border-neutral-200 bg-white px-3 py-2 text-xs text-neutral-600"
+                                        >
+                                            {item}
+                                        </span>
+                                    ))}
                                 </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    {/* ENQUIRY FORM */}
+                    <div className="border border-neutral-200 bg-white p-6 sm:p-9 lg:p-11">
+                        <div className="flex flex-wrap items-start justify-between gap-4 border-b border-neutral-200 pb-7">
+                            <div>
+                                <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#df2929]">
+                                    PROJECT ENQUIRY
+                                </p>
 
-                                <div className="contact-v2-field">
-                                    <label htmlFor="phone">PHONE NUMBER</label>
+                                <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] sm:text-3xl">
+                                    Tell us about your project.
+                                </h2>
+
+                                <p className="mt-2 text-sm text-neutral-500">
+                                    Share the basics. We&apos;ll take it from there.
+                                </p>
+                            </div>
+
+                            <span className="text-3xl font-light text-[#df2929]">↗</span>
+                        </div>
+
+                        <form
+                            action="mailto:ms@meetscriptstech.com"
+                            method="post"
+                            encType="text/plain"
+                            className="mt-8 space-y-6"
+                        >
+                            <div className="grid gap-6 sm:grid-cols-2">
+                                <div>
+                                    <label
+                                        htmlFor="contact-name"
+                                        className="text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-600"
+                                    >
+                                        Your Name *
+                                    </label>
+
                                     <input
-                                        id="phone"
-                                        type="tel"
-                                        placeholder="+91 00000 00000"
-                                    />
-                                </div>
-
-
-                                <div className="contact-v2-field">
-                                    <label htmlFor="company">COMPANY / BRAND</label>
-                                    <input
-                                        id="company"
+                                        id="contact-name"
+                                        name="Name"
                                         type="text"
-                                        placeholder="Your company"
+                                        placeholder="Enter your name"
+                                        autoComplete="name"
+                                        required
+                                        className={inputStyle}
                                     />
                                 </div>
 
+                                <div>
+                                    <label
+                                        htmlFor="contact-email"
+                                        className="text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-600"
+                                    >
+                                        Email Address *
+                                    </label>
 
-                                <div className="contact-v2-field">
-                                    <label htmlFor="service">WHAT DO YOU NEED?</label>
+                                    <input
+                                        id="contact-email"
+                                        name="Email"
+                                        type="email"
+                                        placeholder="you@company.com"
+                                        autoComplete="email"
+                                        required
+                                        className={inputStyle}
+                                    />
+                                </div>
+                            </div>
 
-                                    <select id="service" defaultValue="">
+                            <div className="grid gap-6 sm:grid-cols-2">
+                                <div>
+                                    <label
+                                        htmlFor="contact-phone"
+                                        className="text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-600"
+                                    >
+                                        Phone Number
+                                    </label>
+
+                                    <input
+                                        id="contact-phone"
+                                        name="Phone"
+                                        type="tel"
+                                        placeholder="+91"
+                                        autoComplete="tel"
+                                        className={inputStyle}
+                                    />
+                                </div>
+
+                                <div>
+                                    <label
+                                        htmlFor="contact-service"
+                                        className="text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-600"
+                                    >
+                                        What Do You Need? *
+                                    </label>
+
+                                    <select
+                                        id="contact-service"
+                                        name="Service"
+                                        defaultValue=""
+                                        required
+                                        className={`${inputStyle} cursor-pointer`}
+                                    >
                                         <option value="" disabled>
                                             Select a service
                                         </option>
-                                        <option value="website">
-                                            Website / Application
-                                        </option>
-                                        <option value="creative-design">
-                                            Creative Design
-                                        </option>
-                                        <option value="product-design">
-                                            Product Design
-                                        </option>
-                                        <option value="social-media">
-                                            Social Media
-                                        </option>
-                                        <option value="meta-ads">
-                                            Meta Ads
-                                        </option>
-                                        <option value="video">
-                                            Video
-                                        </option>
-                                        <option value="business-growth">
-                                            Business Growth
-                                        </option>
-                                        <option value="other">
-                                            Something else
-                                        </option>
+
+                                        {services.map((service) => (
+                                            <option value={service} key={service}>
+                                                {service}
+                                            </option>
+                                        ))}
                                     </select>
                                 </div>
+                            </div>
 
-
-                                <div className="contact-v2-field">
-                                    <label htmlFor="message">TELL US MORE</label>
-
-                                    <textarea
-                                        id="message"
-                                        placeholder="Tell us about your business, project or idea..."
-                                    />
-                                </div>
-
-
-                                <button
-                                    type="submit"
-                                    className="contact-v2-submit"
+                            <div>
+                                <label
+                                    htmlFor="contact-message"
+                                    className="text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-600"
                                 >
-                                    <span>Start a conversation</span>
-                                    <span className="contact-v2-submit-arrow">↗</span>
-                                </button>
+                                    Tell Us About Your Project
+                                </label>
 
-                            </form>
+                                <textarea
+                                    id="contact-message"
+                                    name="Project Details"
+                                    rows={5}
+                                    placeholder="A few details about your project, timeline or goals..."
+                                    className={`${inputStyle} resize-y`}
+                                />
+                            </div>
 
-                        </div>
+                            <button
+                                type="submit"
+                                className="flex w-full items-center justify-between gap-5 bg-[#df2929] px-6 py-5 text-xs font-bold uppercase tracking-[0.15em] text-white transition-colors hover:bg-[#111111]"
+                            >
+                                SEND PROJECT ENQUIRY
+                                <span className="text-xl">↗</span>
+                            </button>
 
+                            <p className="text-center text-xs leading-relaxed text-neutral-400">
+                                Submitting opens your default email application with your
+                                enquiry details. No information is stored on this website.
+                            </p>
+                        </form>
                     </div>
-
                 </div>
             </section>
 
-
-            {/* =====================================================
-          SERVICES
-      ===================================================== */}
-
-            <section className="contact-v2-services">
-                <div className="site-container">
-
-                    <div className="contact-v2-section-label">
-                        <span>WHAT WE CAN HELP WITH</span>
-                        <span>04 — SERVICES</span>
-                    </div>
-
-                    <div className="contact-v2-services-heading">
-                        <h2>
-                            Not sure where
-                            <br />
-                            to <span>start?</span>
-                        </h2>
-
-                        <p>
-                            Start with the problem. We&apos;ll help you figure
-                            out the right solution.
+            {/* BOTTOM CTA */}
+            <section className="bg-[#111111] px-5 py-10 text-white sm:px-8 lg:px-12 lg:py-10">
+                <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 sm:flex-row sm:items-center">
+                    <div>
+                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/50">
+                            NOT READY TO SEND AN ENQUIRY?
                         </p>
+
+                        <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] sm:text-4xl">
+                            Explore what we do first.
+                        </h2>
                     </div>
 
-
-                    <div className="contact-v2-service-list">
-
-                        <Link href="/services/websites">
-                            <span>01</span>
-                            <strong>Website / Application</strong>
-                            <em>↗</em>
-                        </Link>
-
-                        <Link href="/services/design">
-                            <span>02</span>
-                            <strong>Creative Design</strong>
-                            <em>↗</em>
-                        </Link>
-
-                        <Link href="/services/product-design">
-                            <span>03</span>
-                            <strong>Product Design</strong>
-                            <em>↗</em>
-                        </Link>
-
-                        <Link href="/services/social-media">
-                            <span>04</span>
-                            <strong>Social Media</strong>
-                            <em>↗</em>
-                        </Link>
-
-                        <Link href="/services/meta-ads">
-                            <span>05</span>
-                            <strong>Meta Ads</strong>
-                            <em>↗</em>
-                        </Link>
-
-                        <Link href="/services/video">
-                            <span>06</span>
-                            <strong>Video</strong>
-                            <em>↗</em>
-                        </Link>
-
-                        <Link href="/services/business-growth">
-                            <span>07</span>
-                            <strong>Business Growth</strong>
-                            <em>↗</em>
-                        </Link>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-            {/* =====================================================
-          FINAL CTA
-      ===================================================== */}
-
-            <section className="contact-v2-final">
-                <div className="site-container">
-
-                    <p>GOOD IDEAS START WITH A CONVERSATION.</p>
-
-                    <h2>
-                        Have something
-                        <br />
-                        in <span>mind?</span>
-                    </h2>
-
-                    <a
-                        href="mailto:ms@meetscriptstech.com"
-                        className="contact-v2-final-button"
+                    <Link
+                        href="/services"
+                        className="inline-flex w-fit items-center gap-6 border border-white/30 px-6 py-4 text-xs font-bold uppercase tracking-[0.15em] transition-colors hover:border-[#df2929] hover:bg-[#df2929]"
                     >
-                        ms@meetscriptstech.com
-                        <span>↗</span>
-                    </a>
-
+                        EXPLORE OUR SERVICES
+                        <span className="text-xl">↗</span>
+                    </Link>
                 </div>
             </section>
-
         </main>
     );
 }
